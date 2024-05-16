@@ -18,7 +18,7 @@ export default function Movies(){
             <Link className="px-5 py-[2px] bg-amber-400/70 text-black rounded-lg font-semibold hover:bg-amber-400 transition-colors duration-300" href={"/"} >Sign Up</Link>
           </div>
              </div>
-             <div className="flex relative items-center justify-center rounded-b-[24px] overflow-hidden h-[600px] mt-[1px] bg-gradient-to-r from-transparent from-[-1%] to-black ">
+             <div className="flex relative items-center justify-center  overflow-hidden h-[600px] mt-[4px] bg-gradient-to-t from-transparent from-[-1%] to-black ">
                 <div className="flex flex-col items-center gap-7 pl-10 ">
                   <div className=" text-6xl font-semibold leading-[1.2] ">Wanna watch free movies & TV?</div>
                   <div className="text-center">You&apos;ve come to the right place. We&apos;ve got a bunch here at <br /> Curator and you can start watching right now.</div>
