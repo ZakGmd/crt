@@ -15,6 +15,13 @@ export default function Home() {
           <Link className="px-5 py-[2px] bg-amber-400/70 text-black rounded-lg font-semibold hover:bg-amber-400 transition-colors duration-300" href={"/"} >Sign Up</Link>
          </div>
        </div>
+       <div className="flex  items-center justify-between mt-[10px]">
+         <div className=" font-extrabold text-6xl tracking-[-0.13px] leading-[1.4]  "> <span className=" text-transparent bg-gradient-to-b from-[#F74366] to-white bg-clip-text ">O</span>ur selection is like <br /> your friend group<br /> small but <span className="text-[#F74366] uppercase">awesome </span>!</div>
+         <div>
+          <Image src={"CuratorHero.svg"} alt={""} width={730} height={730} />
+         </div>
+       </div>
+      
     </main>
   );
 }
