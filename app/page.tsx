@@ -7,8 +7,8 @@ export default function Home() {
        <div className="flex items-center justify-between bg-white/15 px-4 py-1 rounded-md shadow-xl">
         <div className=" font-semibold text-[28px] italic  ">Curator</div>
          <div className="flex items-center gap-8">
-           <Link href={"/"}>Films</Link>
-           <Link href={"/"}>Series</Link>
+           <Link href={"/"} className="font-medium leading-3">Movies</Link>
+           <Link href={"/"}  className="font-medium leading-3">Series</Link>
          </div>
          <div className="flex items-center gap-4">
           <Link href={"/"}>Sign In</Link>
@@ -16,7 +16,7 @@ export default function Home() {
          </div>
        </div>
        <div className="flex  items-center justify-between mt-[10px]">
-         <div className=" font-extrabold text-6xl tracking-[-0.13px] leading-[1.4]  "> <span className=" text-transparent bg-gradient-to-b from-[#F74366] to-white bg-clip-text ">O</span>ur selection is like <br /> your friend group<br /> small but <span className="text-[#F74366] uppercase">awesome </span>!</div>
+         <div className=" font-extrabold text-6xl  leading-[1.4]  "> <span className=" text-transparent bg-gradient-to-b from-[#F74366] from-30% to-white bg-clip-text ">O</span>ur selection is like <br /> Your friend group<br />Small but <span className="text-[#F74366] uppercase">awesome </span>!</div>
          <div>
           <Image src={"CuratorHero.svg"} alt={""} width={730} height={730} />
          </div>
