@@ -75,8 +75,8 @@ const series = [
 
 const typeDefs = gql`
   type Query {
-      fetchMovies: [Movies]
-      fetchSeries: [Series]
+      fetchMovies: [Movies!]!
+      fetchSeries: [Series!]!
   }
 
 type Movies {
@@ -95,11 +95,12 @@ type Series{
 `;
 const resolvers = {
     Query: {
-        
+     fetchMovies: () => movies,
+     fetchSeries: () => series,
     }
 }
 
-const server = new ApolloServer({typeDefs});
+const server = new ApolloServer({typeDefs , resolvers});
 
 const handler = startServerAndCreateNextHandler<NextRequest>(server, {
   context: async req => ({ req }),
