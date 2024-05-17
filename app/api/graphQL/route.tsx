@@ -13,25 +13,25 @@ const movies = [
     {
       id: 2 ,
       title: 'The Equalizer' ,
-      imageUrl: '/dzlWlpr.jpg' ,
+      imageUrl: '/image2.jpg' ,
       description: '' ,    
     },
     {
       id: 3 ,
       title: 'Her' ,
-      imageUrl: '/dzlWlpr.jpg' ,
+      imageUrl: '/image3.jpg' ,
       description: '' ,    
     },
     {
       id: 4 ,
       title: 'Ip Man' ,
-      imageUrl: '/dzlWlpr.jpg' ,
+      imageUrl: '/image4.jpg' ,
       description: '' ,  
     },
     {
       id: 5 ,
       title: 'The book of Eli ' ,
-      imageUrl: '/dzlWlpr.jpg' ,
+      imageUrl: '/image5.jpg' ,
       description: '' ,  
     }
 ] ;
@@ -39,35 +39,35 @@ const series = [
     {
       id: 1 ,
       title: 'Peaky Blinders' ,
-      imageUrl: '' ,
+      imageUrl: '/pb.jpg' ,
       description: '' ,  
       saisons: 6
     },
     {
       id: 2 ,
       title: 'Blacklist' ,
-      imageUrl: '' ,
+      imageUrl: '/blcklist.jpg' ,
       description: '' ,
       saisons: 10    
     },
     {
       id: 3 ,
       title: 'Dark' ,
-      imageUrl: '' ,
+      imageUrl: '/drkjpg.jpg' ,
       description: '' ,  
       saisons: 3  
     },
     {
       id: 4 ,
       title: 'Vikings' ,
-      imageUrl: '' ,
+      imageUrl: '/viking.jpg' ,
       description: '' ,  
       saisons: 6
     },
     {
       id: 5 ,
       title: 'Mr. Robot' ,
-      imageUrl: '' ,
+      imageUrl: '/rbt.jpg' ,
       description: '' ,  
       saisons: 4
     }

@@ -1,7 +1,7 @@
-"use client"
 import Image from "next/image";
-import Link from "next/link"
-import { gql, useQuery } from '@apollo/client';
+import Link from "next/link" ;
+import Moovies from "../components/moviees";
+
 
 type MV = {
     id: number ,
@@ -9,21 +9,9 @@ type MV = {
     description: string ,
     imageUrl: string 
 }
-const FETCH_MOVIES = gql`
-  query FetchMovies {
-    fetchMovies {
-      id
-      title
-      imageUrl
-      description
-    }
-  }
-`;
 
 export default function Movies(){
-    const { data ,loading, error  } = useQuery(FETCH_MOVIES);
-    if (loading) return 'Loading...';
-    if (error) return `Error! ${error.message}`;
+   
     return(
         <div className="flex min-h-screen flex-col ">
             <div className="py-5 ">
@@ -56,30 +44,12 @@ export default function Movies(){
                         <Image src={"right.svg"} alt={"right icon svg white"} width={20} height={20} />
                     </Link>
                     <div className="flex items-center gap-3  ">
-                        <div className="flex flex-col items-start gap-2  overflow-hidden">
-                            <div className="overflow-hidden rounded-md">
-                                 <Image src={"/dzlWlpr.jpg"} alt={""} height={300} width={233} className=" hover:scale-110 cursor-pointer duration-300 " />
-                            </div>
-                           
-                            <div className=" font-medium ">The Little things</div>    
-                        </div>
+                        <Moovies />
                     </div>
                 </div>
             </div>
 
-            <div>
-                {
-                    data.fetchMovies.map(({id, title} : MV)=>(
-                        <div key={id}>
-
-                            <div>{title}</div>
-                          
-                        </div>
-                    )
-
-                    )
-                }
-            </div>
+          
         </div>
     )
 }
