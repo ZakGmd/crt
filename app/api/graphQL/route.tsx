@@ -13,25 +13,25 @@ const movies = [
     {
       id: 2 ,
       title: 'The Equalizer' ,
-      imageUrl: '' ,
+      imageUrl: '/dzlWlpr.jpg' ,
       description: '' ,    
     },
     {
       id: 3 ,
       title: 'Her' ,
-      imageUrl: '' ,
+      imageUrl: '/dzlWlpr.jpg' ,
       description: '' ,    
     },
     {
       id: 4 ,
       title: 'Ip Man' ,
-      imageUrl: '' ,
+      imageUrl: '/dzlWlpr.jpg' ,
       description: '' ,  
     },
     {
       id: 5 ,
       title: 'The book of Eli ' ,
-      imageUrl: '' ,
+      imageUrl: '/dzlWlpr.jpg' ,
       description: '' ,  
     }
 ] ;

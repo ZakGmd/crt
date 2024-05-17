@@ -1,9 +1,29 @@
+"use client"
+import Image from "next/image";
 import Link from "next/link"
-import Image from "next/image"
+import { gql, useQuery } from '@apollo/client';
+
+type MV = {
+    id: number ,
+    title: string ,
+    description: string ,
+    imageUrl: string 
+}
+const FETCH_MOVIES = gql`
+  query FetchMovies {
+    fetchMovies {
+      id
+      title
+      imageUrl
+      description
+    }
+  }
+`;
 
 export default function Movies(){
-
-
+    const { data ,loading, error  } = useQuery(FETCH_MOVIES);
+    if (loading) return 'Loading...';
+    if (error) return `Error! ${error.message}`;
     return(
         <div className="flex min-h-screen flex-col ">
             <div className="py-5 ">
@@ -45,6 +65,20 @@ export default function Movies(){
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div>
+                {
+                    data.fetchMovies.map(({id, title} : MV)=>(
+                        <div key={id}>
+
+                            <div>{title}</div>
+                          
+                        </div>
+                    )
+
+                    )
+                }
             </div>
         </div>
     )
