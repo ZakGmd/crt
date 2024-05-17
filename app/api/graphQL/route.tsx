@@ -5,23 +5,23 @@ import { NextRequest } from 'next/server';
 
 const typeDefs = gql`
   type Query {
-      fetchedUser: [User]
+      fetchMovies: [Movies]
+      fetchSeries: [Series]
   }
 
-type User {
+type Movies {
  id: ID!
  name: String!
- prename: String! 
- age: Int
- email: String! 
-
- tickets: [Ticket]
+ imageUrl: String!
+ description: String! 
 }
-type Ticket{
- ticket_id: ID! 
- status: String!
+type Series{
+ id: ID!
+ name: String!
+ imageUrl: String!
  description: String!
 }
+
 
 `;
 
